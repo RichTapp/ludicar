@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
 
-  // ======================
-  // SMOOTH SCROLL (reforço)
-  // ======================
   document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
@@ -18,9 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  // ======================
-  // SCROLL SPY (MENU ATIVO)
-  // ======================
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-link");
 
@@ -138,4 +132,13 @@ function showMessage(message){
 
     },2000);
 
+}
+
+
+const carousel = document.querySelector('#carouselFases');
+
+if (carousel) {
+    new bootstrap.Carousel(carousel, {
+        touch: true
+    });
 }
