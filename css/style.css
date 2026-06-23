@@ -1,0 +1,593 @@
+/* ======================
+   1. BASE
+====================== */
+
+:root{
+    --roxo:#6F42C1;
+    --verde:#27AE60;
+    --rosa:#FF5C8A;
+    --bg:#FAFAFC;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Segoe UI',sans-serif;
+    overflow-x:hidden;
+}
+
+
+/* ======================
+   2. LAYOUT GLOBAL
+====================== */
+
+.logo-text{
+    color:var(--roxo);
+}
+
+.section-title{
+    font-size:2.5rem;
+    color:var(--roxo);
+    font-weight:700;
+}
+
+.section-subtitle{
+    color:#777;
+    margin-top:15px;
+}
+
+section{
+    padding:70px 0;
+}
+
+
+/* ======================
+   3. COMPONENTES GLOBAIS
+====================== */
+
+.navbar{
+    padding:15px 0;
+}
+
+.nav-link{
+    margin-left:15px;
+    font-weight:500;
+}
+
+.nav-link:hover{
+    color:var(--roxo);
+}
+
+.btn-pink{
+    background:var(--rosa);
+    color:white;
+    border-radius:30px;
+    padding:10px 25px;
+}
+
+.btn-pink:hover{
+    background:#ff3b70;
+    color:white;
+}
+
+
+/* ======================
+   4. HERO
+====================== */
+
+.hero{
+    background:var(--bg);
+    min-height:100vh;
+    padding:0;
+    text-align: center;
+}
+
+.hero-badge{
+    display:inline-block;
+    background:#F0E9FF;
+    color:var(--roxo);
+    padding:10px 20px;
+    border-radius:30px;
+    margin-bottom:20px;
+    font-weight:600;
+}
+
+.hero-title{
+    font-size:3.8rem;
+    font-weight:800;
+    color:var(--roxo);
+    line-height:1.2;
+}
+
+.hero-text{
+    margin-top:25px;
+    font-size:1.1rem;
+    color:#666;
+    max-width:550px;
+}
+
+.hero-image{
+    width: 90%;
+    border-radius: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+.scroll-cue{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    color: #777;
+    font-size: 0.95rem;
+    gap: 5px;
+    animation: float 2.0s infinite ease-in-out;
+}
+
+.scroll-cue i{
+    font-size: 1.3rem;
+}
+
+@keyframes float{
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(5px); }
+}
+
+/* ======================
+   5. SEÇÃO: PROJETO
+====================== */
+
+.project{
+    background:var(--bg);
+}
+
+.project-card{
+    background:white;
+    border-radius:30px;
+    padding:35px;
+    text-align:center;
+    height:100%;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.project-card h4{
+    color:var(--roxo);
+    margin-bottom:15px;
+}
+
+.project-card p{
+    color:#666;
+}
+
+.project-text{
+    max-width:850px;
+    margin:35px auto 0;
+    text-align:center;
+    color:#666;
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+
+/* ======================
+   6. SEÇÃO: OBJETIVO
+====================== */
+
+.objective{
+    text-align:center;
+    background:var(--bg);
+}
+
+.objective-text{
+    margin-top:25px;
+    color:#666;
+    line-height:1.8;
+}
+
+.objective-image{
+    width:85%;
+    border-radius:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition: transform .3s ease, box-shadow .3s ease;
+}
+
+
+/* ======================
+   7. SEÇÃO: BRINCAR
+====================== */
+
+.brincar{
+    background:var(--bg);
+}
+
+.brincar-text{
+    color:#666;
+    line-height:1.9;
+    margin-bottom:20px;
+    font-size:1.05rem;
+}
+
+.brincar-highlight{
+    background:linear-gradient(135deg, #F0E9FF, #ffffff);
+    border:2px solid #eee;
+    border-radius:30px;
+    padding:40px 25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.brincar-highlight i{
+    font-size:3rem;
+    color:var(--roxo);
+    margin-bottom:15px;
+    display:block;
+}
+
+.brincar-highlight h4{
+    color:var(--roxo);
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.brincar-highlight p{
+    color:#666;
+    line-height:1.7;
+}
+
+.brincar-footer{
+    max-width:900px;
+    margin:25px auto 0;
+    text-align:center;
+    color:#666;
+    font-size:1.05rem;
+    line-height:1.8;
+}
+
+
+/* ======================
+   8. SEÇÃO: INFLUÊNCIA
+====================== */
+
+.influencia{
+    background:var(--bg);
+}
+
+.info-card{
+    background:white;
+    border-radius:25px;
+    padding:30px 25px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.info-card i{
+    font-size:2.5rem;
+    color:var(--roxo);
+    margin-bottom:15px;
+    display:block;
+}
+
+.info-card h5{
+    color:var(--roxo);
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.info-card p{
+    color:#666;
+    font-size:.95rem;
+    line-height:1.6;
+}
+
+
+/* ======================
+   9. SEÇÃO: FASES
+====================== */
+
+.fases{
+    background:var(--bg);
+}
+
+.fases-hint{
+    text-align:center;
+    display:block;
+    margin-top:10px;
+    color:#999;
+    font-size:.9rem;
+}
+
+.carousel-inner{
+    overflow: visible;
+}
+
+.fase-card{
+    background:white;
+    border-radius:25px;
+    padding:40px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    max-width:800px;
+    margin:0 auto;
+
+    min-height:350px;
+
+    display:flex;
+    flex-direction:column;
+}
+
+.fase-card h3{
+    color:var(--roxo);
+    margin-bottom:20px;
+}
+
+.fase-card p{
+    color:#666;
+    line-height:1.8;
+}
+
+.fase-card ul{
+    margin-top:auto;
+    padding-left:20px;
+}
+
+.fase-card li{
+    margin-bottom:8px;
+    color:#666;
+}
+
+/* ======================
+   10. SEÇÃO: AUXILIAR
+====================== */
+
+.auxiliar{
+    background:var(--bg);
+}
+
+.aux-card{
+    background:white;
+    border-radius:25px;
+    padding:35px 25px;
+    text-align:center;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.aux-card i{
+    font-size:2.5rem;
+    color:var(--roxo);
+    margin-bottom:15px;
+    display:block;
+}
+
+
+/* ======================
+   11. SEÇÃO: FINAL
+====================== */
+
+.final{
+    background:var(--bg);
+}
+
+.final-box{
+    max-width:900px;
+    margin:0 auto;
+    background:linear-gradient(135deg, #F0E9FF, #ffffff);
+    border-radius:30px;
+    padding:35px;
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+}
+
+
+/* ======================
+   12. SOBRE PROJETO
+====================== */
+
+.sobre-projeto{
+    background:var(--bg);
+}
+
+.about-box{
+    max-width:900px;
+    margin:0 auto;
+    background:white;
+    border-radius:30px;
+    text-align: center;
+    padding:30px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+/* ======================
+   13. SISTEMA DE CARDS
+====================== */
+
+.project-card,
+.info-card,
+.aux-card,
+.brincar-highlight,
+.about-box,
+.final-box{
+    transition:
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.project-card:hover,
+.info-card:hover,
+.aux-card:hover,
+.brincar-highlight:hover,
+.about-box:hover,
+.final-box:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+
+/* ======================
+   14. FOOTER
+====================== */
+
+.footer{
+    background:var(--roxo);
+    color:white;
+    padding:80px 0 30px;
+}
+
+.footer-logo{
+    font-weight:800;
+}
+
+.footer-links{
+    list-style:none;
+    padding:0;
+}
+
+.footer-links li{
+    margin-bottom:10px;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+}
+
+.footer-links a:hover{
+    opacity:.7;
+}
+
+.qr-image{
+    width:150px;
+    border-radius:20px;
+    background:white;
+    padding:10px;
+}
+
+.footer hr{
+    margin:40px 0;
+    opacity:.3;
+}
+
+.footer h4{
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.footer p{
+    opacity:0.9;
+    line-height:1.6;
+}
+
+.share-text{
+    opacity:.9;
+    margin-bottom:25px;
+}
+
+.share-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
+}
+
+.btn-share,
+.btn-copy{
+    border:none;
+    border-radius:30px;
+    padding:12px 22px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn-share{
+    background:white;
+    color:var(--roxo);
+}
+
+.btn-copy{
+    background:rgba(255,255,255,.15);
+    color:white;
+}
+
+.btn-share:hover,
+.btn-copy:hover{
+    transform:translateY(-3px);
+}
+
+.copy-alert{
+
+    position:fixed;
+    bottom:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    background:#8566be;
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    z-index:9999;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+}
+
+
+/* ======================
+   15. MENU ATIVO
+====================== */
+
+.nav-link.active{
+    color: var(--roxo) !important;
+    font-weight: 700;
+    position: relative;
+}
+
+.nav-link.active::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: var(--roxo);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+
+/* ======================
+   16. RESPONSIVIDADE
+====================== */
+
+@media (max-width: 768px){
+
+    .hero-title{
+        font-size: 2.3rem;
+    }
+
+    .section-title{
+        font-size: 1.8rem;
+    }
+
+    .final-box,
+    .about-box{
+        padding: 25px;
+    }
+
+    .aux-card,
+    .info-card,
+    .project-card{
+        padding: 25px;
+    }
+
+    .fase-card{
+        min-height:390px;
+        padding:25px;   
+    }
+
+    section{
+        padding:50px 0;
+    }
+}
